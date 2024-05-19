@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/login.css">
+    <script>
+        
+    </script>
 </head>
 <body>
     <div class="login-wrapper">
         <h2>Login</h2>
-        <form method="post" action="서버의url" id="login-form">
-            <input type="text" name="userName" placeholder="Email">
-            <input type="password" name="userPassword" placeholder="Password">
-            <label for="remember-check">
-                <input type="checkbox" id="remember-check">아이디 저장하기
-            </label>
+        <form method="post" id="login-form">
+            <input type="text" name="email" placeholder="Email" id="email" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
             <input type="submit" value="Login">
         </form>
         <button onclick="window.location.href='/signup'" type="signup" value="Sign Up">회원가입</button>
