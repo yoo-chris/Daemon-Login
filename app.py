@@ -41,7 +41,7 @@ def login():
             session['loggedin'] =True # 로그인 상태를 True로 변경            
             session['email'] = user['email'] # 세션에 account 값을 저장            
             session['password'] =user['password'] # 세션에 password 값을 저장
-            msg = "Login Success!!"
+            msg = "!! Login Success !!"
             return render_template('success.html', msg=msg, username=user['username'])
 
         else:

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/login.css">
     <script>
-        
+        var msg = "{{ msg }}";
+        if (msg) {
+            alert(msg);
+        }
     </script>
 </head>
 <body>
@@ -14,7 +17,7 @@
         <form method="post" id="login-form">
             <input type="text" name="email" placeholder="Email" id="email" required>
             <input type="password" name="password" placeholder="Password" id="password" required>
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" onclick="alert(msg)">
         </form>
         <button onclick="window.location.href='/signup'" type="signup" value="Sign Up">회원가입</button>
     
